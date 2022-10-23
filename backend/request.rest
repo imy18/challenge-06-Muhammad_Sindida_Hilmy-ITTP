@@ -1,0 +1,109 @@
+// Code was written by Muhammad Sindida Hilmy
+// Semua keterangan ada di README.md
+
+// ================================= PENGUJIAN REAL ADA DI POSTMAN LINK TERTERA DI README =========================
+
+// ================================== DISINI(REQUEST.REST) CUMA UNTUK TESTING/ LATIHAN=============================
+
+// ================================================== USER =========================================================
+
+// Get All User
+GET http://localhost:5000/v1/api/users
+Authorization: Bearer 
+// Contoh: Bearer(spasi)Token
+// Ex: Bearer hilmykjfoeifjad
+
+###
+
+// Register
+POST  http://localhost:5000/v1/api/users
+content-type: application/json
+
+{
+    "name": "username",
+    "email": "username@.com",
+    "password": "123456",
+    "confmPassword": "123456",
+    "role": "Admin"
+}
+
+###
+
+// Login
+POST  http://localhost:5000/v1/api/login
+content-type: application/json
+
+{
+    
+    "email": "hilmy.com",
+    "password": "123456"
+    
+}
+
+###
+
+// Refresh Token
+GET  http://localhost:5000/v1/api/token
+
+###
+
+// Logout
+DELETE http://localhost:5000/v1/api/logout
+
+// ================================================================================================================
+
+// =============================================== DATA CARS =======================================================
+
+###
+
+// Get All Data
+GET http://localhost:5000/v1/api/cars
+Authorization: Bearer 
+// Contoh: Bearer(spasi)Token
+// Ex: Bearer hilmykjfoeifjad
+
+###
+
+// Get Data by Id
+GET http://localhost:5000/v1/api/cars/1
+Authorization: Bearer 
+
+###
+
+// Post Data Car
+POST  http://localhost:5000/v1/api/cars
+content-type: application/json
+Authorization: Bearer 
+// Contoh: Bearer(spasi)Token
+// Ex: Bearer hilmykjfoeifjad
+
+{
+    "type": "typeCar",
+    "price": "000000",
+    "size": "small/meduim/large"
+}
+
+###
+
+// Update Data Car by Id
+PUT http://localhost:5000/v1/api/cars/2
+Authorization: Bearer 
+// Contoh: Bearer(spasi)Token
+// Ex: Bearer hilmykjfoeifjad
+{
+    "type": "typeCar",
+    "price": "000000",
+    "size": "small/meduim/large"
+}
+
+###
+
+// Delete Data Car
+DELETE http://localhost:5000/v1/api/3
+Authorization: Bearer 
+// Contoh: Bearer(spasi)Token
+// Ex: Bearer hilmykjfoeifjad
+
+// ================================= PENGUJIAN REAL ADA DI POSTMAN LINK TERTERA DI README =========================
+
+// ================================== DISINI(REQUEST.REST) CUMA UNTUK TESTING/ LATIHAN=============================
